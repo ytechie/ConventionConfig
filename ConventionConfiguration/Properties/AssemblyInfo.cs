@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ConventionConfiguration")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("The easy way to embed and inject JSON configuration in your .NET assemblies.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ConventionConfiguration")]

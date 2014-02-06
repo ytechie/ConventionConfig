@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Jason Young</authors>
+    <owners>Jason Young</owners>
+    <licenseUrl>https://raw.github.com/ytechie/ConventionConfig/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ytechie/ConventionConfig</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>.net configuration convention json</tags>
+  </metadata>
+</package>

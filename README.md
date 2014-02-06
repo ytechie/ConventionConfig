@@ -4,7 +4,7 @@ The easy way to embed and inject JSON configuration in your .NET assemblies. Dro
 
 ## Installation
 
-Install the NuGet package
+Grab the [NuGet package here](https://www.nuget.org/packages/Microsoft.ConventionConfiguration/1.0.0)
 
 ## Usage
 
