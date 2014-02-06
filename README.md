@@ -16,6 +16,27 @@ Grab the [NuGet package here](https://www.nuget.org/packages/Microsoft.Conventio
 
 For a working example, look at the *ConventionConfiguration.Tests* project.
 
+### Example
+
+**Cloud.json:**
+
+	{
+		"Port": 1234,
+		"MsmqQueueName": "DataCollectorQueue"
+	}
+
+**CloudConfiguration.cs:**
+
+    public class DummyConfiguration
+    {
+        public long Port { get; set; }
+        public string MsmqQueueName { get; set; }
+    }
+
+**Wire-up Code:**
+
+	ConfigurationLoader.LoadConfigurations(container, ".\\Configuration\\", "{0}Configuration");
+
 ## Notes
 
 Currently, there is a dependency on [StructureMap](http://docs.structuremap.net/). I'm currently looking for ways to remove this dependency.
