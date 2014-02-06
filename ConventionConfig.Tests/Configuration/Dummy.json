@@ -1,0 +1,4 @@
+﻿{
+	"Port": 1234,
+	"MsmqQueueName": "DataCollectorQueue"
+}
