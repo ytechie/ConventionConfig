@@ -1,4 +1,4 @@
 cd ConventionConfiguration
-nuget pack ConventionConfiguration.csproj
+nuget pack ConventionConfiguration.csproj -Symbols
 move *.ConventionConfiguration.*.nupkg ..
 pause

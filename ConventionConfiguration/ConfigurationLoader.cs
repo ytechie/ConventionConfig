@@ -25,6 +25,22 @@ namespace Microsoft.ConventionConfiguration
         public static void LoadConfigurations(StructureMap.IContainer container, string configurationFilesPath, string classNameConvention)
         {
             Log.DebugFormat("Looking for configuration files in '{0}'", configurationFilesPath);
+
+            if (configurationFilesPath.StartsWith("."))
+            {
+                var path = AssemblyUtils.GetAssemblyDirectory();
+                configurationFilesPath = configurationFilesPath.Substring(1); //ignore .
+                configurationFilesPath = configurationFilesPath.TrimStart('\\');
+
+                configurationFilesPath = Path.Combine(path, configurationFilesPath);
+            }
+
+            if (!Directory.Exists(configurationFilesPath))
+            {
+                Log.WarnFormat("No path with configuration files was found. Tried '{0}'", configurationFilesPath);
+                return;
+            }
+
             var configurationFiles = Directory.GetFiles(configurationFilesPath);
             foreach (var file in configurationFiles)
             {
