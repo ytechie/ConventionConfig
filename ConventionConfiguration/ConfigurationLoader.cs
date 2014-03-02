@@ -92,7 +92,7 @@ namespace Microsoft.ConventionConfiguration
 
         private static IEnumerable<Assembly> GetAssemblies()
         {
-            var basePath = AppDomain.CurrentDomain.BaseDirectory;
+            var basePath = AssemblyUtils.GetAssemblyDirectory();
 
             var extensions = new[] { ".exe", ".dll" };
             var assemblyNames = Directory.GetFiles(basePath).Where(x => extensions.Contains(Path.GetExtension(x)));
